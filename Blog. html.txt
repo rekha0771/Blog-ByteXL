@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Horizons</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f8f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #008080;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        main {
+            flex: 3;
+            padding: 20px;
+            background-color: #fff;
+            margin-right: 20px;
+        }
+
+        main article {
+            margin-bottom: 20px;
+        }
+
+        main article img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .read-more:hover {
+            background-color: #ff867f;
+        }
+
+        .more-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #e0f2f1;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #008080;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Horizons</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>Tech Crunch</h2>
+                <p><strong>Author:</strong> Rekha | <strong>Date:</strong> August 18, 2024</p>
+                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/12/techcrunch-website-homepage.webp" alt="TechCrunch Website">
+                <p>Main topics: technology and startup news. Created on: WordPress VIP.
+                TechCrunch is a blog that provides technology and startup news, from the latest developments in Silicon Valley to venture capital funding.
+                The blog’s target audience is technology and business enthusiasts, especially startup founders and investors worldwide.
+                What Can We Learn From This Blog
+                The TechCrunch website’s clean layout prioritizes text readability with its simple white background and black text.
+                Headlines of the most recent articles are shown neatly on the homepage and accompanied by snippets from the blog posts and relevant pictures to add a splash of color.
+                The TechCrunch website also provides a helpful sidebar on the left side of the screen for easy navigation.</p>
+                <div class="more-content">
+                    <p>Additional content about TechCrunch that will be revealed when the "Read More" link is clicked.</p>
+                </div>
+                <a class="read-more">Read More</a>
+            </article>
+            <article>
+                <h2>Engadget</h2>
+                <p><strong>Author:</strong> Rekha | <strong>Date:</strong> August 18, 2024</p>
+                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/12/engadget-website-homepage.webp" alt="Engadget Website">
+                <p>Main topics: technology, gadgets, consumer electronics. Created on: proprietary AOL CMS.
+                 Launched by Peter Rojas, Engadget is a technology blog providing reviews of gadgets and consumer electronics as well as the latest news in the tech world.
+                It also showcases the best tech deals, helping people make the best gadget purchases according to their needs.
+                What Can We Learn From This Blog
+                The blog’s simple black-and-white theme gives it a sleek look fitting for a technology blog.
+                Upon accessing the website, visitors’ eyes are immediately drawn to the collage of photos and headlines of their most recent and popular articles.</p>
+                <div class="more-content">
+                    <p>Additional content about Engadget that will be revealed when the "Read More" link is clicked.</p>
+                </div>
+                <a class="read-more">Read More</a>
+            </article>
+        </main>
+
+        <aside>
+            <section class="recent-posts">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">The Future of AI in Startups</a></li>
+                    <li><a href="#">How TechCrunch Changed the Industry</a></li>
+                    <li><a href="#">Engadget's Top Gadget Picks</a></li>
+                    <li><a href="#">Exploring the Next Tech Frontier</a></li>
+                </ul>
+            </section>
+
+            <section class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Startups</a></li>
+                    <li><a href="#">Gadgets</a></li>
+                    <li><a href="#">Industry News</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tech Horizons. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for toggling the "Read More" content
+        document.querySelectorAll('.read-more').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var moreContent = this.previousElementSibling;
+                if (moreContent.style.display === "none" || moreContent.style.display === "") {
+                    moreContent.style.display = "block";
+                    this.textContent = "Read Less";
+                } else {
+                    moreContent.style.display = "none";
+                    this.textContent = "Read More";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
